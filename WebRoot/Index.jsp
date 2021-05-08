@@ -90,6 +90,7 @@
 	        <p>留言信息管理</p>
 	        <div>
 	                <a href="<%=path %>/User/MsgAdd.jsp" target="mainFrame">添加留言信息</a>
+	                <br/>
 	                <a href="<%=path %>/MsgHandle?type=4" target="mainFrame">管理留言信息</a>
 	        </div>
 	        
