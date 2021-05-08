@@ -7,3 +7,4 @@
 Parking.iml
 classes/*
 WebRoot/WEB-INF/classes/*
+out/*

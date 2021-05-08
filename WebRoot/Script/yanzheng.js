@@ -1,8 +1,8 @@
 
 //生成并渲染出验证码图形
 function draw(show_num) {
-    var canvas_width=$('#canvas').width();
-    var canvas_height=$('#canvas').height();
+    var canvas_width=$('#canvas').width()*2;
+    var canvas_height=$('#canvas').height()*2;
     var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
     var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
     canvas.width = canvas_width;
@@ -17,7 +17,7 @@ function draw(show_num) {
         var txt = aCode[j];//得到随机的一个内容
         show_num[i] = txt.toLowerCase();
         var x = 20 + i * 50;//文字在canvas上的x坐标
-        var y = 10 + Math.random() * 8;//文字在canvas上的y坐标
+        var y = 30 + Math.random() * 8;//文字在canvas上的y坐标
         context.font = "bold 23px 微软雅黑";
         context.translate(x, y);
         context.rotate(deg);
