@@ -66,6 +66,9 @@
                 a= false;
                 return;
             }
+        });
+        $("#reset-btn").click('click',function(){
+            $('.inp').val('');
         })
     });
 </script>
@@ -83,7 +86,7 @@
 			        <p><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input type="password" class="inp" name="user_pwd" value="123123"  /></p>
 			        <p><label>验证码： </label><input id="verify-code" class="inp" name="verify" placeholder="请输入验证码,不区分大小写"  /></p>
 			        <canvas id="canvas" width="100" height="30"></canvas>
-			        <p class="btn"><input type="submit" class="btnLogin" value="登陆"  id="clickin" /><input type="button" class="btnCancel" value="重置" /></p>	       		
+			        <p class="btn"><input type="submit" class="btnLogin" value="登陆"  id="clickin" /><input id="reset-btn" type="button" class="btnCancel" value="重置" /></p>
 		       	</form>
 		     </div>
       </div>
