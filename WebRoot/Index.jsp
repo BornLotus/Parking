@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="_Error.jsp"%>
+    pageEncoding="UTF-8" errorPage="Admin/_Error.jsp"%>
 <%
 	String path = request.getContextPath();//获取项目名称
 %>
