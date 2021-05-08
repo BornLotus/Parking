@@ -90,17 +90,17 @@ String temp_money=new String(request.getParameter("temp_money").getBytes("ISO885
 			//插入数据操作
 			private void insertEntity() throws UnsupportedEncodingException, IOException
 			{
-		
+				request.setCharacterEncoding("utf-8");
 				response.setCharacterEncoding("UTF-8");
 				response.setContentType("text/html;charset=UTF-8");
 				PrintWriter out=response.getWriter();
 				
 				SimpleDateFormat dateFormat =new    SimpleDateFormat("yyyyMMddHHmmss"); 
 			    String temp_id=dateFormat.format(new Date());
-				//String card_id=new String(request.getParameter("card_id").getBytes("ISO8859_1"),"UTF-8");
-				//String car_num=new String(request.getParameter("car_num").getBytes("ISO8859_1"),"UTF-8");
-			    String card_id = request.getParameter("card_id");
-			    String car_num = request.getParameter("car_num");
+				String card_id=new String(request.getParameter("card_id").getBytes("ISO8859_1"),"UTF-8");
+				String car_num=new String(request.getParameter("car_num").getBytes("ISO8859_1"),"UTF-8");
+//			    String card_id = request.getParameter("card_id");
+//			    String car_num = request.getParameter("car_num");
 				SimpleDateFormat dFormat =new    SimpleDateFormat("yyyy-MM-dd"); 
 			    String entry_date=dFormat.format(new Date());
 			    SimpleDateFormat tFormat =new    SimpleDateFormat("HH:mm:ss"); 

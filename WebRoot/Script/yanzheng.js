@@ -18,7 +18,7 @@ function draw(show_num) {
         show_num[i] = txt.toLowerCase();
         var x = 20 + i * 50;//文字在canvas上的x坐标
         var y = 30 + Math.random() * 8;//文字在canvas上的y坐标
-        context.font = "bold 23px 微软雅黑";
+        context.font = "bold 28px 微软雅黑";
         context.translate(x, y);
         context.rotate(deg);
         context.fillStyle = randomColor();

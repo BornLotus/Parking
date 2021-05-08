@@ -82,8 +82,8 @@
 		    <div class="loginPanel">
 		    	<form action="<%=path %>/LoginHandle" method="post" onsubmit="return checkinput();">
 		    		<h2>智能化停车场管理系统</h2>
-			       	<p><label>账&nbsp;&nbsp;&nbsp;&nbsp;号：</label><input type="text" class="inp" name="user_id" value="SAdmin" /></p>
-			        <p><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input type="password" class="inp" name="user_pwd" value="123123"  /></p>
+			       	<p><label>账&nbsp;&nbsp;&nbsp;&nbsp;号：</label><input type="text" class="inp" name="user_id" value="SAdmin" placeholder="请输入用户ID"/></p>
+			        <p><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input type="password" class="inp" name="user_pwd" value=""  placeholder="请输入密码"/></p>
 			        <p><label>验证码： </label><input id="verify-code" class="inp" name="verify" placeholder="请输入验证码,不区分大小写"  /></p>
 			        <canvas id="canvas" width="100" height="30"></canvas>
 			        <p class="btn"><input type="submit" class="btnLogin" value="登陆"  id="clickin" /><input id="reset-btn" type="button" class="btnCancel" value="重置" /></p>
